@@ -15,6 +15,7 @@ public class One2OneMappingApplication {
 
 		System.out.println("------------------------------------------------");
 		SpringApplication.run(One2OneMappingApplication.class, args);
+		
 		System.out.println("------------------------------------------------");
 	}
 
