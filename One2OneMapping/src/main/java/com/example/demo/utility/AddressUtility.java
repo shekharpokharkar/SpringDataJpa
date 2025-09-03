@@ -7,7 +7,7 @@ import com.example.demo.dto.StudentDTO;
 import com.example.demo.entity.Address;
 import com.example.demo.entity.Student;
 
-public class AddressUtility {
+public interface AddressUtility {
 
 	public static Address mapToAddress(AddressDTO addressDTO) {
 

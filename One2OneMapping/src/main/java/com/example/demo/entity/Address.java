@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -34,6 +36,8 @@ public class Address {
 	private String state;
 	private String zipCode;
 
+	@ToString.Exclude
+	@JsonBackReference
 	@OneToOne(mappedBy = "studentAddress")
 	private Student student;
 

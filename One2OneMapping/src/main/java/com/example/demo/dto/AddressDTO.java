@@ -1,6 +1,7 @@
 package com.example.demo.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,6 +16,7 @@ import lombok.ToString;
 @Getter
 @ToString
 @Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class AddressDTO {
 	private Integer addressId;
 	private String laneName1;
